@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
-DIR=/var/www/cgi-bin
-cp *.py ${DIR}/ 
-cp *.vcf ${DIR}/
+DIR1=/var/www/cgi-bin
+DIR2=/var/www/html/contacts
+cp *.py ${DIR1}/ 
+cp *.vcf ${DIR1}/
+mkdir -p ${DIR2}
 
