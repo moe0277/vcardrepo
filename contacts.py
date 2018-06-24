@@ -14,11 +14,11 @@ html1 = """<!DOCTYPE html>
 <HTML>
 <head>
 <meta charset="UTF-8">
-<title>CSH Contacts</title>
+<title>VCard Repository</title>
 </head>
 <body> 
 
-<p>CSH VCard (.vcf) Repo</p>
+<p>VCard (.vcf) Repo</p>
 <hr />
 <p>Review Current Records below to see if there is a vcard record for you, if your record is not present,  upload your .vcf file.</p>
 <p>The vcard / .vcf file should contain your email address, physical address, and phone number.</p>
