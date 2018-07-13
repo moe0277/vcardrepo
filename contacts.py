@@ -86,7 +86,10 @@ def getValidFilesHtml(validfiles, uname=None):
 			if ((not uname) or (uname==key)):
 				rhtml += "<tr>"
 				rhtml += "<td>" + '<img src="%s" height=200 width=200>' % (BASEURL+key + ".vcf.png")   + "</td>"
-				rhtml += '<td><a href="/cgi-bin/contacts.py?person=%s">%s</a></td>' % (key, key)
+				if uname==key: 
+					rhtml += "</tr>"
+					rhtml += "<tr>"
+				rhtml += '<td>&nbsp;&nbsp;&nbsp;<a href="/cgi-bin/contacts.py?person=%s">%s</a></td>' % (key, cvcf.getPersonName(UPLOAD_DIR+key+".vcf"))
 				rhtml += "</tr>"
 	rhtml += "</table>"
 	return rhtml

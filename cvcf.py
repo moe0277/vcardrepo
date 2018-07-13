@@ -14,7 +14,7 @@ def getPersonName(filename):
 	vfile = open(filename, "r")
 	vstring = vfile.read()
 	vcard = vobject.readOne(vstring)
-	return vcard.n.value.given + vcard.n.value.family
+	return vcard.n.value.given + " " + vcard.n.value.family
 
 if __name__ == "__main__":
 	FILENAME1="/var/www/html/contacts/moe.f.khan.vcf"
